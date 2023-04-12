@@ -1,0 +1,11 @@
+[package]
+name = "dense_strings"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["serde_support"]
+serde_support = ["serde"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"], optional = true }
